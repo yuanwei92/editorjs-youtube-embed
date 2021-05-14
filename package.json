@@ -1,6 +1,6 @@
 {
   "name": "editorjs-youtube-embed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Youtube video embed tool for Editor.js",
   "main": "dist/main.js",
   "scripts": {
@@ -13,6 +13,10 @@
   ],
   "author": "Tei Yuan Wei",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuanwei92/editorjs-youtube-embed"
+  },
   "babel": {
     "presets": [
       "@babel/preset-env"

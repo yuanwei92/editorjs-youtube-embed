@@ -10,7 +10,7 @@
 import './main.css';
 import ToolboxIcon from './svg/toolbox.svg'
 
-class YoutubeEmbed {
+export default class YoutubeEmbed {
 
     /**
      * 

@@ -54,6 +54,7 @@ This tool has no config params
 | url            | `string`  | video url                       |
 
 
+
 ```json
 {
     "type": "youtubeEmbed",
