@@ -1,0 +1,8 @@
+/**
+ * YouTube embed plugin for Editor.js.
+ *
+ * @author Tei Yuan Wei
+ * @license MIT License (MIT)
+ * @version 1.0.0
+ * 
+ */
