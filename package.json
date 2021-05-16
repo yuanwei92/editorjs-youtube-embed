@@ -1,6 +1,6 @@
 {
   "name": "editorjs-youtube-embed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Youtube video embed tool for Editor.js",
   "main": "dist/main.js",
   "scripts": {
