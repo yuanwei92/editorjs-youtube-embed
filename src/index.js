@@ -33,8 +33,9 @@ export default class YoutubeEmbed {
      * @param {data: DelimiterData} — previously saved data
      * 
      */
-    constructor({data}){
+    constructor({data, readOnly}){
         this.data = data;
+        this.readOnly = readOnly;
         this.wrapper = null;
         this.url = null;
         this.isEdited = false;
@@ -92,6 +93,16 @@ export default class YoutubeEmbed {
         plyrContainer.appendChild(iframe);
         this.wrapper.appendChild(plyrContainer);
     }
+
+    /**
+     * Returns true to notify the core that read-only mode is supported
+     *
+     * @return {boolean}
+     */
+    static get isReadOnlySupported() {
+        return true;
+    }
+
 
    /**
    * Return block data
