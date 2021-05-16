@@ -3,7 +3,7 @@
  *
  * @author Tei Yuan Wei
  * @license MIT License (MIT)
- * @version 1.0.0
+ * @version 1.0.2
  * 
  */
 
