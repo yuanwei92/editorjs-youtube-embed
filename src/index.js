@@ -33,9 +33,10 @@ export default class YoutubeEmbed {
      * @param {data: DelimiterData} — previously saved data
      * 
      */
-    constructor({data, readOnly}){
+    constructor({ data, config, api, readOnly }){
         this.data = data;
         this.readOnly = readOnly;
+
         this.wrapper = null;
         this.url = null;
         this.isEdited = false;
@@ -52,6 +53,7 @@ export default class YoutubeEmbed {
         this.wrapper = document.createElement('div');
         const input = document.createElement('input');
         input.value = this.data && this.data.url ? this.data.url : '';
+        this.url = input.value;
         input.placeholder = "Paste YouTube url here...";
 
         this.wrapper.classList.add('block-wrapper');
@@ -60,6 +62,7 @@ export default class YoutubeEmbed {
 
         input.addEventListener('change', (event) => {
             this.isEdited = true;
+            
             this.url = input.value;
             this._createIframe(input.value);
         });
