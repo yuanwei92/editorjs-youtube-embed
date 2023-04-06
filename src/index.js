@@ -76,14 +76,15 @@ export default class YoutubeEmbed {
      * @param {string} url
      * 
      */
-    _createIframe(url){        
-        const videoId = url.match(/(?<=v=)[a-zA-Z0-9_]+(?=\&?)/);
-        if (videoId == null) {
+    _createIframe(url){
+        const videoData = url.match('v=([a-zA-Z0-9_-]+)&?');
+        if (videoData == null) {
             if (this.isEdited) {
                 this.wrapper.querySelector("input").classList.add("invalid");
             }
             return
         }
+        const videoId = videoData[1];
 
         this.wrapper.innerHTML = null;
         const plyrContainer = document.createElement('div');
